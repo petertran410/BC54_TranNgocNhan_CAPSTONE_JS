@@ -141,7 +141,17 @@
             <form class="needs-validation" id="foodForm">
               <div class="row">
                 <div class="col-md-6 mb-3">
-                  <label for="tenMon">Product Name</label>
+                  <label for="productID">Product ID</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="productID"
+                    placeholder="Input Product"
+                    required />
+                  <div id="invalidTen" class="invalid-form"></div>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="productName">Product Name</label>
                   <input
                     type="text"
                     class="form-control"
@@ -151,12 +161,12 @@
                   <div id="invalidTen" class="invalid-form"></div>
                 </div>
                 <div class="col-md-6 mb-3">
-                  <label for="loai">Type</label>
+                  <label for="type">Type</label>
                   <select
                     class="custom-select d-block w-100"
                     id="type"
                     required>
-                    <option value="">Selection</option>
+                    <option selected>Selection</option>
                     <option value="loai1">Iphone</option>
                     <option value="loai2">Samsung</option>
                   </select>
@@ -174,7 +184,7 @@
                   <div id="invalidGia" class="invalid-feedback"></div>
                 </div>
                 <div class="col-md-6 mb-3">
-                  <label for="srceen">Screen</label>
+                  <label for="productScreen">Screen</label>
                   <input
                     type="text"
                     class="form-control"
@@ -185,7 +195,7 @@
                   <div id="invalidGia" class="invalid-feedback"></div>
                 </div>
                 <div class="col-md-6 mb-3">
-                  <label for="frontScreen">Front Screen</label>
+                  <label for="productFrontScreen">Front Screen</label>
                   <input
                     type="text"
                     class="form-control"
@@ -196,7 +206,7 @@
                   <div id="invalidGia" class="invalid-feedback"></div>
                 </div>
                 <div class="col-md-6 mb-3">
-                  <label for="backScreen">Back Screen</label>
+                  <label for="productBackScreen">Back Screen</label>
                   <input
                     type="text"
                     class="form-control"
@@ -209,7 +219,7 @@
               </div>
               <div class="mb-3">
                 <div class="form-group">
-                  <label for="image">Image</label>
+                  <label for="productImage">Image</label>
                   <input
                     type="text"
                     class="form-control"

@@ -2,7 +2,8 @@ export let renderProductList = (productArr) => {
   var contentHTML = "";
 
   productArr.forEach((product) => {
-    let {id, name, price, frontScreen, backScreen, screen, type, desc, img} = product;
+    let { id, name, price, frontScreen, backScreen, screen, type, desc, img } =
+      product;
 
     var trString = `<tr>
                       <td>${id}</td>
@@ -24,4 +25,23 @@ export let renderProductList = (productArr) => {
   });
 
   document.getElementById("tbodyProductList").innerHTML = contentHTML;
+};
+
+const forIphone = "loai1";
+const forSamsung = "loai2";
+const Iphone = true;
+
+export let showDataForm = (product) => {
+  let { id, name, price, frontScreen, backScreen, screen, type, desc, img } =
+    product;
+
+  document.querySelector("#productID").value = id;
+  document.querySelector("#productName").value = name;
+  document.querySelector("#type").value = type == Iphone ? forIphone : forSamsung;
+  document.querySelector("#productPrice").value = price;
+  document.querySelector("#productScreen").value = screen;
+  document.querySelector("#productFrontScreen").value = frontScreen;
+  document.querySelector("#productBackScreen").value = backScreen;
+  document.querySelector("#productImage").src = img;
+  document.querySelector("#productDescription").value = desc;
 };

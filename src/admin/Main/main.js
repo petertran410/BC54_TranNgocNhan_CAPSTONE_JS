@@ -1,6 +1,6 @@
 import { getDataFromForm } from "../Product/product.js";
 import https from "../Service/service.js";
-import { renderProductList } from "../controller/controller.js";
+import { renderProductList, showDataForm } from "../controller/controller.js";
 
 let fetchProductList = () => {
   https
@@ -44,7 +44,30 @@ window.addProduct = () => {
 };
 
 window.editProduct = (id) => {
-  $("exampleModal").modal("show");
+  $("#exampleModal").modal("show");
   https
     .get(`/product/${id}`)
-}
+    .then((res) => {
+      console.log(res.data);
+      showDataForm(res.data);
+      fetchProductList(res);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+};
+
+window.updateProduct = () => {
+  let product = getDataFromForm();
+
+  https
+    .put(`/product/${product.id}`, product)
+    .then((res) => {
+      $("#exampleModal").modal("hide");
+      console.log(res);
+      fetchProductList(res);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+};
