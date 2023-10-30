@@ -27,8 +27,8 @@ export let renderProductList = (productArr) => {
   document.getElementById("tbodyProductList").innerHTML = contentHTML;
 };
 
-const forIphone = "loai1";
-const forSamsung = "loai2";
+const forIphone = "Iphone";
+const forSamsung = "Samsung";
 const Iphone = true;
 
 export let showDataForm = (product) => {

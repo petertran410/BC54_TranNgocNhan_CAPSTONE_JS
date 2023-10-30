@@ -68,31 +68,18 @@
     </nav>
     <div>
       <main role="main" class="">
-        <div class="row">
-          <div class="col-4">
-            <h2>Danh Sách Sản Phẩm</h2>
-          </div>
-          <div class="col-8 addProduct">
+        <div class="d-flex">
+          <h2>Danh Sách Sản Phẩm</h2>
+
+          <div class="text-right addProduct">
             <button
               id="btnThem"
               type="button"
               class="btn btn-warning mb-3 text-white"
               data-toggle="modal"
               data-target="#exampleModal">
-              Thêm Món Ăn
+              Add Product
             </button>
-          </div>
-        </div>
-        <div class="">
-          <div class="form-group row">
-            <div class="col-sm-12">
-              <select class="custom-select" id="selLoai">
-                <option selected>Chọn loại</option>
-                <option value="all">Tất cả</option>
-                <option value="loai1">Chay</option>
-                <option value="loai2">Mặn</option>
-              </select>
-            </div>
           </div>
         </div>
 
@@ -167,8 +154,8 @@
                     id="type"
                     required>
                     <option selected>Selection</option>
-                    <option value="loai1">Iphone</option>
-                    <option value="loai2">Samsung</option>
+                    <option value="Iphone">Iphone</option>
+                    <option value="Samsung">Samsung</option>
                   </select>
                   <div id="invalidLoai" class="invalid-feedback"></div>
                 </div>
@@ -232,7 +219,10 @@
 
               <div class="mb-3">
                 <label for="description">Description</label>
-                <textarea class="form-control" id="productDescription" rows="3"></textarea>
+                <textarea
+                  class="form-control"
+                  id="productDescription"
+                  rows="3"></textarea>
                 <div id="invalidMoTa" class="invalid-form"></div>
               </div>
             </form>
