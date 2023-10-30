@@ -10,7 +10,13 @@ body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(120deg, #aedefc, #f875aa);
+  background: linear-gradient(
+    92.23deg,
+    #1d1d1f 11.43%,
+    #8e8e8f 50.63%,
+    #c7c7c7 100%,
+    #ffffff 117.04%
+  );
   height: 100vh;
 }
 
@@ -23,7 +29,7 @@ a:link {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 400px;
+  width: 280px;
   background: white;
   border-radius: 10px;
   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
@@ -42,7 +48,6 @@ a:link {
   border-radius: 5px;
   border: none;
   font-weight: bold;
-  background-color: #aedefc;
   color: #fff;
   line-height: 1.8em;
 }
@@ -50,30 +55,15 @@ a:link {
 .btn_admin:hover,
 .btn_customer:hover {
   cursor: pointer;
-  background-color: #f875aa;
+  background-color: #8e8e8f;
   color: #fff;
 }
 
 .btn_admin:hover a,
 .btn_customer:hover a {
-  color: #aedefc;
-}
-
-.sp-thongbao {
-  color: #da0c81;
-  margin-left: 2px;
-  display: none;
+  color: #8e8e8f;
 }
 
 .wrapper {
   padding-top: 40px;
 }
-
-#content {
-  width: 100%;
-  /* background: #74ebd5; */
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #beadfa, #cdfad5);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-} /*# sourceMappingURL=main.css.map */
