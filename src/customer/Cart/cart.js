@@ -22,7 +22,7 @@ let generateCartItems = () => {
             let { img, price, name } = search;
             return `
             <div class="cart-item">
-              <img width="100" src=${img} alt="" />
+              <img width="200" src=${img} alt="" />
       
               <div class="details">
                 
@@ -58,7 +58,7 @@ let generateCartItems = () => {
     ShoppingCart.innerHTML = "";
     label.innerHTML = `
       <h2>Cart is Empty</h2>
-      <a href="index.html">
+      <a href="../Main/customer.html">
         <button class="HomeBtn">Back to Home</button>
       </a>
       `;
