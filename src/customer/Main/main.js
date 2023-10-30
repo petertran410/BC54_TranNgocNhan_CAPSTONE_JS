@@ -3,7 +3,7 @@ let shop = document.getElementById("shop");
 let basket = JSON.parse(localStorage.getItem("data")) || [];
 
 // Fetch data from the API
-fetch("https://6539c7c2e3b530c8d9e8aa55.mockapi.io/Produt")
+fetch("https://653f783f9e8bd3be29e0a2db.mockapi.io/product")
   .then((response) => response.json())
   .then((data) => {
     const shopItemsData = data;

@@ -104,6 +104,7 @@ a {
   flex-direction: column;
   padding: 10px;
   gap: 10px;
+  width: 100%;
 }
 
 .price-quantity {
@@ -189,7 +190,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* border: 2px solid red; */
 }
 
 .title-price {

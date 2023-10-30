@@ -12,7 +12,7 @@ calculation();
 
 let generateCartItems = () => {
   if (basket.length !== 0) {
-    fetch("https://6539c7c2e3b530c8d9e8aa55.mockapi.io/Produt")
+    fetch("https://653f783f9e8bd3be29e0a2db.mockapi.io/product")
       .then((response) => response.json())
       .then((shopItemsData) => {
         ShoppingCart.innerHTML = basket
@@ -22,7 +22,7 @@ let generateCartItems = () => {
             let { img, price, name } = search;
             return `
             <div class="cart-item">
-              <img width="200" src=${img} alt="" />
+              <img width="100" src=${img} alt="" />
       
               <div class="details">
                 
@@ -121,7 +121,7 @@ let removeItem = (itemId) => {
 
 let TotalAmount = () => {
   if (basket.length !== 0) {
-    fetch("https://64b6ce1adf0839c97e162662.mockapi.io/Products")
+    fetch("https://653f783f9e8bd3be29e0a2db.mockapi.io/product")
       .then((response) => response.json())
       .then((shopItemsData) => {
         let amount = basket
